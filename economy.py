@@ -32,7 +32,6 @@ class Economy(object):
         for i, item in enumerate(match_list):
             if item.find('æ') + item.find('ø') + item.find('å') > -3:
                 match_list[i] = self.non_norwegian(item)
-        print(match_list)
         self.categories.update({name: match_list})
         self.category_totals.update({name: 0})
 
@@ -60,7 +59,7 @@ class Economy(object):
                     self.uncat_value += value
                     self.uncat_items.update(
                         {'{:40} {}'.format(self.non_norwegian(description),
-                                        date): value})
+                                           date): value})
                 self.total_value += value
 
         self.coverage = self.matched_value / (
@@ -80,16 +79,18 @@ class Economy(object):
                 match_list = li.split(',')
                 self.add_cat(cat_name, match_list)
 
-
-    def print_results(self):
+    def print_results(self, monthly_average=True):
         sorted_totals = sorted(self.category_totals.items(),
                                key=operator.itemgetter(1))
         print('')
         print('Money coverage: {:.2f}'.format(self.coverage))
         print('Monthly average:\n')
         for cat in sorted_totals:
-            print('{:15} {:.0f}'.format(cat[0],
-                                        cat[1] / self.months / self.coverage))
+            if monthly_average:
+                val = cat[1] / self.months
+            else:
+                val = cat[1]
+            print('{:15} {:.0f}'.format(cat[0], val / self.coverage))
         print('')
         print('{:15} {:.0f}'.format('Total:', self.total_value / self.months))
         print('')
