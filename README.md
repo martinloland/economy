@@ -1,7 +1,23 @@
 # economy
 Calculates your monthly money consumption in categories based on card use
 
-## Example output:
+## Example use
+
+    from economy import Economy
+
+    econ = Economy('forbruk.csv')
+    econ.add_cat(
+        'mat',
+        ['rema', 'bunnpris', 'coop', 'meny', 'kiwi', 'obs'])
+    econ.add_cat(
+        'transport',
+        ['flybussen', 'nsb', 'taxi', 'ruter', 'flytoget', 'buss', 'atb'])
+        
+    econ.calculate()
+    econ.print_results()
+    econ.print_uncat()
+
+## Example output
 
     Money coverage: 0.93
     Monthly average:
