@@ -70,3 +70,9 @@ Uncategorized items:
    -678.80   lovenskiold han fossegrenda  trondheim   2017-09-01
    -648.00   klarna * internetstores g                2017-09-22
 ```
+
+### Note on calculations
+
+The monthly average in each category will be divided by the money coverage.
+That way uncategorized items will be distributed to all categories such that
+the total value is equal to what has actually been spent.
