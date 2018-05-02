@@ -32,6 +32,7 @@ class Economy(object):
         for i, item in enumerate(match_list):
             if item.find('æ') + item.find('ø') + item.find('å') > -3:
                 match_list[i] = self.non_norwegian(item)
+        print(match_list)
         self.categories.update({name: match_list})
         self.category_totals.update({name: 0})
 
@@ -69,6 +70,16 @@ class Economy(object):
         self.category_totals[key] += value
         self.matched_value += value
         self.matches += 1
+
+    def categories_from_file(self, filename):
+        if not path.isfile(filename):
+            raise FileNotFoundError('Could not find file {}'.format(filename))
+        with open(filename, 'r') as f:
+            for line in f:
+                cat_name, li = line.rstrip().split(':')
+                match_list = li.split(',')
+                self.add_cat(cat_name, match_list)
+
 
     def print_results(self):
         sorted_totals = sorted(self.category_totals.items(),

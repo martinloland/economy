@@ -19,6 +19,25 @@ econ.print_results()
 econ.print_uncat()
 ```
 
+Or categories can be loaded from file:
+
+```python
+from economy import Economy
+
+econ = Economy('forbruk.csv')
+econ.categories_from_file('categories.txt')
+econ.calculate()
+econ.print_results()
+econ.print_uncat()
+```
+
+**categories.txt**:
+
+```
+mat:rema,bunnpris,coop,meny,kiwi,obs
+transport:flybussen,nsb,taxi,ruter,flytoget,buss,atb
+```
+
 ## Example output
 
 ```
