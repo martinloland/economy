@@ -1,4 +1,6 @@
 *.csv
+*.xls
+*.xlsx
 .idea
 
 # Created by https://www.gitignore.io/api/python,windows,pycharm

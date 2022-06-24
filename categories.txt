@@ -1,0 +1,13 @@
+mat og drikke:rema,bunnpris,coop,meny,kiwi,obs,vinmonopolet,sodexo,hallangen,pizzastua,asker haveli,morgenlevering,extra,restaurant,tuktuk,street food,sushi,oda.com,hellofresh,joker,tajmahal,bambus,kajsas,spar,cafe,baker hansen,tapaz,kafe,olutsalg,lokalbrygg
+kler og sko:zalando,sessa,xxl,intersport,bergans,pikant,match,kappahl,fretex,cubus,h&m
+personlig pleie:hair & there,farmasiet,asker legesent,apotek,sunkost,trekanten apote,paahaaret,ritualscosmetics,kicks
+lek og media:google,hbo,viaplay,netflix,spotify,udemy,audible,amzn,elkjop,elkj¢p,komplett,elektroimportoeren,outnorth,fotoknudsen,cdon,telenorbutikken,norli,gamezone,mestergull,teater,momi garn,get,telia,anton sport,ark asker,sportoutlet
+reise:flybussen,nsb,taxi,ruter,flytoget,buss,atb,norwegian,airbnb,hotel
+husholdning:bauhaus,ledonline,megaflis,ikea,clasohlson,clas ohl,kjell.com,tilbords,bakerenogkokken,gartnerbutikken,euroflorist,kitch`n,europris,plantasjen,nille,mester gr¢nn,ramme service,jysk,japan photo,kid interi,billingstad tre,elite foto,jernia,blomster,planteboersen,kremmerhuset,mester gr¢nn,leggermester,enklere liv,kitchn
+bilkostnader:yx,biltema,circle k,easypark,esso,hjulskift,auto elite,1-2-3,express,shell,europark,uno-x,fjellinjen
+baby:babyshop,barnas hus,askergynekologe,barnashus
+laan:betaling paa laan
+felleskostnader:sameie
+strom:agva kraft,fortum,elvia
+forsikring:fremtind
+felles faste/forbruk:felles faste utgifter,felles forbruk
