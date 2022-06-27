@@ -1,3 +1,4 @@
+from cmath import log
 import csv
 import enum
 import operator
@@ -48,7 +49,7 @@ def csv_to_data_nordea(csv_file, delimiter=';', skiplines=7):
             ingoing = row[9].replace(' ', '').replace(',', '.')
             v = 0
             if outgoing:
-                v = -float(outgoing)
+                v = float(outgoing)
             elif ingoing:
                 v = float(ingoing)
             data.append({
